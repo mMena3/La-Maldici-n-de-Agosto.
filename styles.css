@@ -150,3 +150,21 @@ button:hover {
         transform: translate(-50%, -50%);
     }
 }
+
+/* Ajustes automáticos para pantallas de menos de 480px (celulares chicos) */
+@media (max-width: 480px) {
+    .capitulo {
+        padding: 20px 15px;
+        /* Menos margen interno para ganar espacio */
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        /* Reduce un poco el título en teléfonos */
+    }
+
+    #mensaje-sorpresa {
+        width: 85%;
+        /* Asegura que la tarjeta flotante no se corte */
+    }
+}
