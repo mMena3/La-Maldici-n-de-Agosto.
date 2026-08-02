@@ -1,38 +1,152 @@
-/* MODIFICAR EL ESTILO (CSS) */
+/* Importamos una fuente elegante y misteriosa para los títulos */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap');
+
+/* Reset básico para márgenes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f4f1ea;
-    color: #2b2b2b;
-    line-height: 1.8;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+    /* Fuente muy cómoda para lectura larga */
+    background-color: #0d0d0d;
+    color: #e0dcd3;
+    line-height: 1.9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-h1 {
-    text-align: center;
-    color: #4a2e1b;
-}
-
+/* El contenedor del cuento */
 .capitulo {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #1a1616;
+    max-width: 680px;
+    padding: 40px;
+    border-radius: 4px;
+    /* Un borde sutil rojo oscuro con sombra ambiental */
+    border: 1px solid #3a1212;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9),
+        0 0 15px rgba(139, 0, 0, 0.2);
 }
 
+/* Título principal */
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #ff2e2e;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    /* Efecto de resplandor rojo en el título */
+    text-shadow: 0 0 10px rgba(255, 46, 46, 0.4);
+}
+
+/* Parrafos */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Primera letra del cuento (Letra capitular misteriosa) */
+p:first-of-type::first-letter {
+    font-family: 'Cinzel', serif;
+    font-size: 3.2rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 10px;
+    color: #8b0000;
+}
+
+/* Botón interactivo ajustado al tema */
 button {
     display: block;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    background-color: #4a2e1b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: #2b0808;
+    color: #ff2e2e;
+    border: 1px solid #ff2e2e;
+    border-radius: 4px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #6b4327;
+    background-color: #ff2e2e;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px rgba(255, 46, 46, 0.6);
+}
+
+/* Estilo para la palabra secreta */
+.secreto {
+    color: #ff2e2e;
+    text-decoration: underline dotted #ff2e2e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.secreto:hover {
+    color: #ffffff;
+}
+
+/* Ocultar la sorpresa por defecto */
+.oculto {
+    display: none;
+}
+
+/* Modal o ventana de la sorpresa */
+#mensaje-sorpresa {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1616;
+    border: 2px solid #ff2e2e;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(255, 46, 46, 0.5);
+    z-index: 1000;
+    animation: aparecer 0.5s ease-out;
+}
+
+.corazon {
+    font-size: 3rem;
+    animation: latido 1s infinite alternate;
+}
+
+.texto-secreto {
+    margin-top: 15px;
+    color: #e0dcd3;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
+
+/* Animaciones */
+@keyframes latido {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
