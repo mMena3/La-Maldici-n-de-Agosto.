@@ -1,0 +1,33 @@
+/* Estilos para el soneto */
+.poema {
+    text-align: center;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+.poema p {
+    margin-bottom: 25px;
+    /* Separación entre estrofas */
+    line-height: 1.8;
+}
+
+/* Darle aspecto de botón a los enlaces entre páginas */
+.boton-enlace {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2b0808;
+    color: #ff2e2e;
+    border: 1px solid #ff2e2e;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.boton-enlace:hover {
+    background-color: #ff2e2e;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px rgba(255, 46, 46, 0.6);
+}
