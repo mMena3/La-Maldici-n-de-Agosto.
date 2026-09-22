@@ -117,28 +117,3 @@ body {
         margin-top: 60px;
     }
 }
-
-.corazon-puntos {
-    font-family: 'Space Mono', monospace;
-    font-size: 3rem;
-    /* Tamaño del texto */
-    line-height: 1.25;
-    /* Reduce la distancia vertical entre filas */
-    letter-spacing: 5em;
-    /* Define la distancia horizontal exacta */
-    color: #ff2e2e;
-    /* O el tono oscuro que estés usando */
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 25px;
-    white-space: pre;
-    /* Mantiene exactamente la alineación espacial */
-}
-
-@media (max-width: 600px) {
-    .corazon-puntos {
-        font-size: 0.85rem;
-        /* Ajuste para que no rompa en pantallas pequeñas */
-        letter-spacing: 0.1em;
-    }
-}
