@@ -1,6 +1,6 @@
 // Agrega aquí las estrofas de tu soneto (usa <br> para los saltos de línea)
 const estrofas = [
-  "Un verso aquí que empieza la penumbra,<br>otro verso que sigue en la distancia,<br>la luz lejana que apenas alumbra,<br>y el susurro tenue de su fragancia.",
+  "El lirio blanco, puro y excepcional:<br>Para mí, amor, tú eres esa pureza.<br>Pétalos claros y redondos, sin mal.<br>Tallo fuerte, lejos de la maleza.",
   "Segunda estrofa del soneto aquí,<br>continúa el ritmo con elegancia,<br>palabras dulces que guardé para ti,<br>llenas de calma y de resonancia.",
   "Tercera estrofa que empieza a cerrar,<br>con sentimiento firme y profundo,<br>un verso claro para recordar.",
   "Y en el último verso de este mundo,<br>dejar la huella que no ha de borrar,<br>este secreto sutil y fecundo."
