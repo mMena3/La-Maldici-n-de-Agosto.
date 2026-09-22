@@ -120,11 +120,11 @@ body {
 
 .corazon-puntos {
     font-family: 'Space Mono', monospace;
-    font-size: 1.1rem;
+    font-size: 3rem;
     /* Tamaño del texto */
     line-height: 1.25;
     /* Reduce la distancia vertical entre filas */
-    letter-spacing: 0.15em;
+    letter-spacing: 5em;
     /* Define la distancia horizontal exacta */
     color: #ff2e2e;
     /* O el tono oscuro que estés usando */
