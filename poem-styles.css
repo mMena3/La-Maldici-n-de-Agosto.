@@ -117,3 +117,25 @@ body {
         margin-top: 60px;
     }
 }
+
+/* Estilo para el corazón gigante tipeado */
+.corazon-ascii {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.4rem;
+    /* Ajusta el tamaño general del corazón */
+    line-height: 1.1;
+    color: #ff2e2e;
+    /* Rojo sangre / carmesí */
+    text-align: center;
+    margin-top: 30px;
+    white-space: pre;
+    /* Mantiene la alineación y espacios del corazón */
+    text-shadow: 0 0 10px rgba(255, 46, 46, 0.4);
+}
+
+@media (max-width: 600px) {
+    .corazon-ascii {
+        font-size: 1rem;
+        /* Se ajusta automáticamente en celulares */
+    }
+}
