@@ -5,15 +5,15 @@ const estrofas = [
   "Tercera estrofa que empieza a cerrar,<br>con sentimiento firme y profundo,<br>un verso claro para recordar.",
   "Y en el último verso de este mundo,<br>dejar la huella que no ha de borrar,<br>este secreto sutil y fecundo.",
   
-  // 💖 Corazón gigante tipeado con puntos (.)
+  // Corazón alineado con proporciones reales:
   "<div class='corazon-puntos'>" +
-  "  ...     ...  <br>" +
-  "....... .......<br>" +
-  "...............<br>" +
-  " ............. <br>" +
-  "   .........   <br>" +
-  "     .....     <br>" +
-  "       .       " +
+  " * *       * * <br>" +
+  "*   *     *   *<br>" +
+  "*     * *     *<br>" +
+  " *           * <br>" +
+  "   *       *   <br>" +
+  "     *   *     <br>" +
+  "       *       " +
   "</div>"
 ];
 

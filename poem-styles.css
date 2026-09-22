@@ -118,24 +118,27 @@ body {
     }
 }
 
-/* Estilo minimalista para el corazón de puntos */
 .corazon-puntos {
     font-family: 'Space Mono', monospace;
-    font-size: 1.5rem;
-    /* Ajusta el tamaño de los puntos/corazón */
-    line-height: 1.1;
+    font-size: 1.1rem;
+    /* Tamaño del texto */
+    line-height: 1.25;
+    /* Reduce la distancia vertical entre filas */
+    letter-spacing: 0.15em;
+    /* Define la distancia horizontal exacta */
     color: #ff2e2e;
-    /* Rojo o el color que prefieras */
+    /* O el tono oscuro que estés usando */
     text-align: center;
     margin-top: 35px;
+    margin-bottom: 25px;
     white-space: pre;
-    /* Mantiene la forma del corazón */
-    letter-spacing: 2px;
+    /* Mantiene exactamente la alineación espacial */
 }
 
 @media (max-width: 600px) {
     .corazon-puntos {
-        font-size: 1.1rem;
-        /* Se escala perfecto para celulares */
+        font-size: 0.85rem;
+        /* Ajuste para que no rompa en pantallas pequeñas */
+        letter-spacing: 0.1em;
     }
 }
