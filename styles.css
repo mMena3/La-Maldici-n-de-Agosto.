@@ -32,7 +32,6 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9),
         0 0 15px rgba(139, 0, 0, 0.2);
 }
-
 /* Título principal */
 h1 {
     font-family: 'Cinzel', serif;
@@ -44,14 +43,12 @@ h1 {
     /* Efecto de resplandor rojo en el título */
     text-shadow: 0 0 10px rgba(255, 46, 46, 0.4);
 }
-
 /* Parrafos */
 p {
     margin-bottom: 20px;
     font-size: 1.1rem;
     text-align: justify;
 }
-
 /* Primera letra del cuento (Letra capitular misteriosa) */
 p:first-of-type::first-letter {
     font-family: 'Cinzel', serif;
@@ -61,26 +58,6 @@ p:first-of-type::first-letter {
     padding-right: 10px;
     color: #8b0000;
 }
-
-/* Botón interactivo ajustado al tema
-button {
-    display: block;
-    margin: 30px auto 0;
-    padding: 12px 24px;
-    background-color: #2b0808;
-    color: #ff2e2e;
-    border: 1px solid #ff2e2e;
-    border-radius: 4px;
-    font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-button:hover {
-    background-color: #ff2e2e;
-    color: #0d0d0d;
-    box-shadow: 0 0 15px rgba(255, 46, 46, 0.6);
-} */
 /* Darle aspecto de botón a los enlaces entre páginas */
 .boton-pagina {
     display: inline-block;
