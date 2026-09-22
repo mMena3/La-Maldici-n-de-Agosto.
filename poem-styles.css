@@ -118,24 +118,24 @@ body {
     }
 }
 
-/* Estilo para el corazón gigante tipeado */
-.corazon-ascii {
+/* Estilo minimalista para el corazón de puntos */
+.corazon-puntos {
     font-family: 'Space Mono', monospace;
-    font-size: 1.4rem;
-    /* Ajusta el tamaño general del corazón */
+    font-size: 1.5rem;
+    /* Ajusta el tamaño de los puntos/corazón */
     line-height: 1.1;
     color: #ff2e2e;
-    /* Rojo sangre / carmesí */
+    /* Rojo o el color que prefieras */
     text-align: center;
-    margin-top: 30px;
+    margin-top: 35px;
     white-space: pre;
-    /* Mantiene la alineación y espacios del corazón */
-    text-shadow: 0 0 10px rgba(255, 46, 46, 0.4);
+    /* Mantiene la forma del corazón */
+    letter-spacing: 2px;
 }
 
 @media (max-width: 600px) {
-    .corazon-ascii {
-        font-size: 1rem;
-        /* Se ajusta automáticamente en celulares */
+    .corazon-puntos {
+        font-size: 1.1rem;
+        /* Se escala perfecto para celulares */
     }
 }
