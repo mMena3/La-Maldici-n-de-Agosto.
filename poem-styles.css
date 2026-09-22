@@ -1,33 +1,69 @@
 /* Estilos para el soneto */
 .poema {
-    text-align: center;
-    margin: 30px 0;
-    font-style: italic;
+  text-align: center;
+  margin: 30px 0;
+  font-style: italic;
 }
 
 .poema p {
-    margin-bottom: 25px;
-    /* Separación entre estrofas */
-    line-height: 1.8;
+  margin-bottom: 25px; /* Separación entre estrofas */
+  line-height: 1.8;
+}
+
+/* Efecto de fondo de papel */
+.capitulo-poema {
+    background: radial-gradient(circle, #1f1818 0%, #0d0d0d 100%);
+    border: 1px solid rgba(255, 46, 46, 0.3);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.poema-tipeado {
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ff2e2e;
+    /* El cursor que titila */
+    animation: escribiendo 3.5s steps(40, end), titileo 0.75s step-end infinite;
+}
+
+/* Resaltado al ir por encima de las estrofas */
+@keyframes escribiendo {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+@keyframes titileo {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ff2e2e;
+    }
 }
 
 /* Darle aspecto de botón a los enlaces entre páginas */
 .boton-enlace {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #2b0808;
-    color: #ff2e2e;
-    border: 1px solid #ff2e2e;
-    border-radius: 4px;
-    text-decoration: none;
-    font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2b0808;
+  color: #ff2e2e;
+  border: 1px solid #ff2e2e;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .boton-enlace:hover {
-    background-color: #ff2e2e;
-    color: #0d0d0d;
-    box-shadow: 0 0 15px rgba(255, 46, 46, 0.6);
+  background-color: #ff2e2e;
+  color: #0d0d0d;
+  box-shadow: 0 0 15px rgba(255, 46, 46, 0.6);
 }
